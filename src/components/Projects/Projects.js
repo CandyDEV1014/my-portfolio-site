@@ -5,7 +5,6 @@ import Particle from "../Particle";
 import plant from "../../Assets/Projects/plant.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
-
 import getDoctor from "../../Assets/Projects/getDoctor.png";
 import nanoPasses from "../../Assets/Projects/nanoPasses.png";
 import dlops from "../../Assets/Projects/dlops.png";
@@ -28,14 +27,14 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={getDoctor}
-              isBlog={true}
+              isBlog={false}
               title="Doctor Client"
               description="Doctor Video consultation allows you to consult a healthcare professional from home, via your smartphone or your computer. This application built with React, Next.js, Redux, BootStrap."
               ghLink=""
               demoLink="https://doctor-client.vercel.app/"
             />
           </Col>
-          
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={nanoPasses}

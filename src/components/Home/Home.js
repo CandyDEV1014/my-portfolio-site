@@ -2,8 +2,19 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
-import Home2 from "./Home2";
 import Type from "./Type";
+import Button from "react-bootstrap/Button";
+import {
+  SiLinkedin,
+  SiGithub,
+  SiTelegram,
+  SiSkype,
+  // SiDiscord
+} from "react-icons/si";
+
+const sendEmail = () => {    
+  window.open("mailto:danielgilbert0407@gmail.com?subject=Contact");
+};
 
 function Home() {
   return (
@@ -38,9 +49,75 @@ function Home() {
               />
             </Col>
           </Row>
+          <Row>
+          <Col md={12} className="home-about-social">
+            <h1>Get In Touch</h1>
+            <p style={{fontSize: '1.2em'}}>
+              At the moment, I’m looking for any new opportunities, my inbox is always open. <br />
+              Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+            </p>
+            <div style={{ margin: '2rem 0' }}>
+              <Button variant="outline-primary" className="email_btn" onClick={() => sendEmail()}>
+                Say Hello
+              </Button>  
+            </div>
+            <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://github.com/candyDEV1014"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <SiGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/daniel-gilbert-86a346239/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <SiLinkedin />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://t.me/CandyDEV0407"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <SiTelegram />
+                </a>
+              </li>
+              
+              <li className="social-icons">
+                <a
+                  href="https://join.skype.com/invite/whDBGaaS0MVi"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <SiSkype />
+                </a>
+              </li>
+              {/* <li className="social-icons">
+                <a
+                  href="https://join.skype.com/invite/whDBGaaS0MVi"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <SiDiscord />
+                </a>
+              </li> */}
+            </ul>
+          </Col>
+        </Row>
         </Container>
       </Container>
-      <Home2 />
     </section>
   );
 }
