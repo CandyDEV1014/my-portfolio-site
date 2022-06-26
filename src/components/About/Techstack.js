@@ -1,40 +1,63 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
-  DiJavascript1,
-  DiReact,
   DiNodejs,
-  DiMongodb,
   DiPython,
   DiGit,
 } from "react-icons/di";
 import {
-  SiPytorch,
   SiFirebase,
   SiNextdotjs,
+  SiVuedotjs,
+  SiNuxtdotjs,
+  SiElectron,
+  SiMongodb,
+  SiMysql,
+  SiLaravel,
+  SiPhp,
+  SiReact, 
+  SiJavascript,
+  SiTypescript,
 } from "react-icons/si";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <SiJavascript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <SiTypescript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <SiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiNextdotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVuedotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNuxtdotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPhp />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiLaravel />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiElectron />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMongodb />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
@@ -44,9 +67,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPytorch />
       </Col>
     </Row>
   );
